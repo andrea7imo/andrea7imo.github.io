@@ -4,14 +4,15 @@ body {
     background: white;
 }
 
-.container {
+/* Navbar */
+/*.container {
     width: 80%;
     margin: 0 auto;
 }
 
 header {
     /*position: absolute;
-    top: 0%;*/
+    top: 0%;--
     width: 100%;
     background: #000000;
     box-shadow:2px 2px 12px rgba(0, 0, 0, 0.7);
@@ -41,7 +42,6 @@ header::after {
 
 nav {
     float: right;
-    
 }
 
 nav ul {
@@ -56,7 +56,7 @@ nav li {
     padding-top: 28px;
     
     position: relative;
-    /*padding-bottom: 23px;*/
+    /*padding-bottom: 23px;--
 }
 
 nav a {
@@ -85,8 +85,7 @@ nav a:before {
 
 nav a:hover::before {
     width: 100%;
-
-}
+}*/
 
 main {
     /*display: flex;*/
@@ -121,7 +120,7 @@ main {
 .card{
     /*top: 200px;*/
     border-radius: 8px;
-    width: 480px;
+    width: 100%;
     /*position: relative;
     bottom: 30%;*/
     
@@ -144,8 +143,6 @@ main {
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
-    /*transform:translate(10%,0%);*/
-
     /*position:absolute;
     bottom:60px;
     left:75%;*/
@@ -183,7 +180,7 @@ main {
 
 /* Button */
 .card button{
-    width: 430px;
+    width: 100%;
     height:42px;
     border-radius:10px;
     font-weight:bold;
@@ -217,10 +214,17 @@ button:active{
 
 .container-about {
     /*margin: 30px;*/
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-bottom: 30px;
     padding-top: 30px;
+}
+
+@media only screen and (min-width: 900px) {
+    .container-about {
+        padding-left: 130px;
+        padding-right: 130px;
+    }
 }
 
 .projects {
@@ -230,9 +234,15 @@ button:active{
 }
 
 .projects-content {
-    padding: 130px;
+    padding: 30px;
     background: #48484834;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.7);
+}
+
+@media only screen and (min-width: 900px) {
+    .projects-content {
+        padding: 130px;
+    }
 }
 
 .projects-content:hover {
@@ -294,3 +304,183 @@ footer {
     color: rgba(255, 255, 255, 0.658);
     text-align: center;
 }
+
+/* Navbar prova*/
+a {
+    color: #000;
+  }
+  
+  /* header */
+  
+  .header {
+    background-color: #000000;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.3);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    /*background-color: #fff;*/
+  }
+  
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    /*border-right: 1px solid #f4f4f4;*/
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+
+  .header a:hover {
+    color: #ffd600;
+
+}
+
+.header li a:before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #ffd600;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+.header li a:hover::before {
+    /*width: 100%;*/
+}
+
+  
+  /*.header li a:hover,*/
+  .header .menu-btn:hover {
+    background-color: #f4f4f4;
+  }
+
+
+  
+  /*.header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }*/
+
+.logo {
+    font-family: "Courier New", Courier, monospace;
+    float: left;
+    color: white;
+    font-size: 24px;
+    font-style: italic;
+    transform:translate(15%,0%);
+}
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 35px 30px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  /* 48em = 768px */
+  
+  @media (min-width: 48em) {
+      .header ul {
+          margin-right: 80px;
+      }
+    .header li {
+        float: left;
+    }
+    .header li a {
+        padding-top: 30px;
+    }
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .header .menu-icon {
+        display: none;
+    }
+    .logo {
+        transform:translate(80%,0%);
+    }
+  }
+  
