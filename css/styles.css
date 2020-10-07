@@ -263,12 +263,17 @@ button:active{
     color: white;
     background: black;
     text-align: center;
+    padding: 10px;
 }
 
 .project-card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
 }
 
+
+.link-project {
+    color: #ffd600;
+}
 
 /* fotter */
 
