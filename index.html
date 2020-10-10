@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300">
-        <link href="css/styles.css" rel="stylesheet" type="text/css">
-        <title>Andrea Settimo</title>
-    </head>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Andrea Settimo</title>
+</head>
 
-    <body>
-        <!--<img src="img/bg.png" class="bg-main">-->
-        <!-- Navbar -->
-        <!--<header>
+<body>
+    <!--<img src="img/bg.png" class="bg-main">-->
+    <!-- Navbar -->
+    <!--<header>
             
                 <ul>
                     <li><a href="#">
@@ -32,94 +32,106 @@
             </div>
         </header>-->
 
-        <header class="header">
-            <div class="container">
-                <p class="logo">#Andrea7imo</p>
-            </div>
-            <input class="menu-btn" type="checkbox" id="menu-btn" />
-            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-            <ul class="menu">
-              <li><a href="#work">Home</a></li>
-              <li><a href="#about">About Me</a></li>
-              <li><a href="#careers">Projects</a></li>
-            </ul>
-          </header>
+    <header class="header">
+        <div class="container">
+            <p class="logo">#Andrea7imo</p>
+        </div>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="#image">Home</a></li>
+            <li><a href="#image">CV</a></li>
+            <li><a href="#cv">About Me</a></li>
+            <li><a href="#about">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
 
-        <div>
-            <img src="img/Andrea settimo.jpg" class="model">
-            <div class="card">
-                <div class="container-card">
-                    <h1>Hi, I'm Andrea Settimo</h1>
-                    <h2>Computer Engineer & Data Scientist</h2>
-                    <button class="down-cv"><a href="./doc/Andrea_Settimo_CV.pdf" download>Download CV</a></button>
-                </div>
+    <div>
+        <img src="img/Andrea settimo.jpg" class="model" id="image">
+        <div class="card" id="cv">
+            <div class="container-card">
+                <h1>Hi, I'm Andrea Settimo</h1>
+                <h2>Computer Engineer & Data Scientist</h2>
+                <a href="./doc/Andrea_Settimo_CV.pdf" download><button class="down-cv">Download CV</button></a>
             </div>
         </div>
+    </div>
 
-        
-        <!-- About -->
-        <div class="about-content">
-            <div class="container-about">
-                <h3>About me</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-            </div>
+
+    <!-- About -->
+    <div class="about-content" id="about">
+        <div class="container-about">
+            <h3>About me</h3>
+            <p>I was born on May 2nd in Chieti. The my education have been purely scientific. I graduated in computer engineering in 2018 at the Politecnico di Torino. In the last two year, I have attended part to the master's degree on computer engineering,
+                with specialization on data science.</p>
         </div>
+    </div>
 
-        <!-- Project -->
-        <div class="projects">
-            <div class="projects-content">
-                <h1>Projects</h1>
-                <div class="projects-cards">
-                    <div class="project-card">
-                        <h2>Shared Editor</h2>
-                          <p>This projects is developped using the CRDT algorithm. Using the QT framework on C++.</p> 
-                          <a class="link-project" href="https://github.com/sordinho/PDS-Project">See the code.</a>           
-                    </div>
-                    <div class="project-card">
-                        <h2>Secondhand Market</h2> 
-                        <p>The Secondhand Market is an Android app, which permittes to sell/buy objects.</p>
-                        <a class="link-project" href="https://bitbucket.org/sordinho/404-not-found/src/master/">See the code.</a>            
-                    </div>
-                    <div class="project-card">
-                        <h2>Analysis on The Forest Fires Dataset</h2>   
-                        <p>This projects studies different regression technique on The Forest Fires Dataset.</p>
-                        <a class="link-project" href="https://github.com/andrea7imo/DataSpacesThesis">See the code.</a>                       
-                    </div>
+    <!-- Project -->
+    <div class="projects" id="projects">
+        <div class="projects-content">
+            <h1>Projects</h1>
+            <div class="projects-cards">
+                <div class="project-card">
+                    <h2>Shared Editor</h2>
+                    <p>This projects is developped using the CRDT algorithm. Using the QT framework on C++.</p>
+                    <a class="link-project" href="https://github.com/sordinho/PDS-Project">See the code.</a>
                 </div>
-
-                <div class="projects-cards">
-                    <div class="project-card">
-                          <h2>Machine Learning and Artificial Intelligence, Final Part of Exam</h2>
-                          <p>This project is involved on the The Deepfake Detection Challenge (DFDC), it was created by Facebook.</p>
-                          <a class="link-project" href="#">See the code.</a>                        
-                    </div>
-                    <div class="project-card">
-                        <h2>Aircraft seat reservations</h2>
-                        <p>This project is a second part of PD1, it concerns the realization of web app which permittes to book an aircraft's seats.</p>                                        
-                        <a class="link-project" href="https://github.com/andrea7imo/Programmazione-distribuita-1">See the code.</a>
-                    </div>
-                    <div class="project-card">
-                        <h2>File Transfer</h2>
-                        <p>This project is a first part of PD1, it concerns the realization of C program which permittes to send a file from server to clients.</p>                                        
-                        <a class="link-project" href="https://github.com/andrea7imo/Programmazione-distribuita-1">See the code.</a> 
-                    </div>
+                <div class="project-card">
+                    <h2>Secondhand Market</h2>
+                    <p>The Secondhand Market is an Android app, which permittes to sell/buy objects.</p>
+                    <a class="link-project" href="https://bitbucket.org/sordinho/404-not-found/src/master/">See the code.</a>
+                </div>
+                <div class="project-card">
+                    <h2>Analysis on The Forest Fires Dataset</h2>
+                    <p>This projects studies different regression technique on The Forest Fires Dataset.</p>
+                    <a class="link-project" href="https://github.com/andrea7imo/DataSpacesThesis">See the code.</a>
                 </div>
             </div>
-        </div>
-        
-        <footer>
-            <div class="references">
-                <a href="https://github.com/andrea7imo/"><img src="img/github-logo.png" class="img-logo"></a>
-                <a href="#"></a><img src="img/twitter.png" class="img-logo"></a> 
-                <a href="https://www.instagram.com/andrea7imo/"><img src="img/instagram.png" class="img-logo"></a> 
+
+            <div class="projects-cards">
+                <div class="project-card">
+                    <h2>Machine Learning and Artificial Intelligence, Final Part of Exam</h2>
+                    <p>This project is involved on the The Deepfake Detection Challenge (DFDC), it was created by Facebook.</p>
+                    <a class="link-project" href="#">See the code.</a>
+                </div>
+                <div class="project-card">
+                    <h2>Aircraft seat reservations</h2>
+                    <p>This project is a second part of PD1, it concerns the realization of web app which permittes to book an aircraft's seats.</p>
+                    <a class="link-project" href="https://github.com/andrea7imo/Programmazione-distribuita-1">See the code.</a>
+                </div>
+                <div class="project-card">
+                    <h2>File Transfer</h2>
+                    <p>This project is a first part of PD1, it concerns the realization of C program which permittes to send a file from server to clients.</p>
+                    <a class="link-project" href="https://github.com/andrea7imo/Programmazione-distribuita-1">See the code.</a>
+                </div>
             </div>
-            <p class="email">
-                <b>e-mail:</b><br>
-                settimo.andrea[at]outlook.com
-            </p>
-            <p class="credits">
-                This web site is developed by Andrea Settimo.
-            </p>
-        </footer>
-    </body>
+
+            <div class="projects-cards">
+                <div class="project-card">
+                    <h2>This web site</h2>
+                    <p>This web site is developped only using HTML and CSS.</p>
+                    <a class="link-project" href="https://github.com/andrea7imo/andrea7imo.github.io">See the code.</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <div class="references">
+            <a href="https://github.com/andrea7imo/"><img src="img/github-logo.png" class="img-logo"></a>
+            <a href="https://twitter.com/SettimoAndrea"><img src="img/twitter.png" class="img-logo"></a>
+            <a href="https://www.instagram.com/andrea7imo/"><img src="img/instagram.png" class="img-logo"></a>
+        </div>
+        <p class="email">
+            <b>e-mail:</b><br> settimo.andrea[at]outlook.com
+        </p>
+        <p class="credits">
+            This web site is developed by Andrea Settimo.
+        </p>
+    </footer>
+</body>
+
 </html>
